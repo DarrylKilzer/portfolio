@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <router-link class="navbar-brand" to="/">Darryl Kilzer Jr.</router-link>
+              <router-link to="/" class="navbar-brand">Darryl Kilzer Jr.</router-link>
             </div>
             <div id="navbar" class="navbar-collapse collapse" style="font-size:20px;">
               <ul class="nav navbar-nav">

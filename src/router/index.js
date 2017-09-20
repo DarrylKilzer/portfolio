@@ -22,6 +22,10 @@ export default new Router({
       path: '/projects',
       name: 'Projects',
       component: Projects
+    },
+    {
+      path: '*',
+      redirect: '/' 
     }
   ]
 })
