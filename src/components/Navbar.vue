@@ -6,12 +6,13 @@
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <router-link to="/" class="navbar-brand">Darryl Kilzer Jr.</router-link>
+              <!-- <router-link to="/" class="navbar-brand">Darryl Kilzer Jr.</router-link> -->
             </div>
             <div id="navbar" class="navbar-collapse collapse" style="font-size:20px;">
               <ul class="nav navbar-nav">
@@ -53,5 +54,7 @@ export default {
 
 
 <style scoped>
-
+.navbar{
+  padding: .4rem
+}
 </style>

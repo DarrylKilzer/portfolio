@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="font">
     <navbar></navbar>
     <h1>Darryl Kilzer Jr.</h1>
     <h3>Software Engineer</h3>
@@ -23,48 +23,88 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
 }
-
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, .7), black), url(https://t2.ftcdn.net/jpg/00/05/05/01/400_F_5050151_1F8sdPz85J4SYmPdM4af6kZlzrHrNGcF.jpg);
-  background-attachment: fixed;
-}
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+  .pad-top{
+    padding-top: 1rem;
+  }
+	.content-block {
+		position:relative;
+		width:100%;
+		height:100vh;
+		overflow:hidden;
+	}
+	.text {
+		font:2rem / 2rem sans-serif;
+		width:200px;
+		position:absolute;
+		top:85px;
+		left:80%;
+		margin-left:-50px;
+		color:#fff;
+		text-shadow:0 0 10px #000;
+    text-align:center;
+	}
+	.full {
+		height: 50vh;
+	}
+	.hide{
+		display: none;
+	}
+	.bg {
+		z-index:-1; /* put it below the text */
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:url('./assets/home/ground_3.png') 0 0, url('./assets/home/ground_2.png') 40% 0, url('./assets/home/ground_1.png') 70% 0, url('./assets/home/clouds_1.png') 80% 0, url('./assets/home/sky.png') 90%, 0;
+		-webkit-transition: left 300s linear;
+		   -moz-transition: left 300s linear;
+		     -o-transition: left 300s linear;
+		        transition: left 300s linear;
+	}
+	#viewabout{
+		margin: 25px;
+	}
+	.font{
+		color: aquamarine;
+		text-shadow:0 0 60px #1B1;
+		font-size: 1.8rem;
+		
+	}
+	#bg-hover:hover, #bg-target:target {
+		left:-9999px;
+	}
+	#bg-keyframes {
+		-webkit-animation: moving-images 400s linear infinite;
+		   -moz-animation: moving-images 400s linear infinite;
+		     -o-animation: moving-images 400s linear infinite;
+		        animation: moving-images 400s linear infinite;
+	}
+	@keyframes moving-images {
+		0%   {left:0;}
+		50%  {left:-9999px;}
+		100% {left:0;}
+	}
+	@-moz-keyframes moving-images { 
+		0%   {left:0;}
+		50%  {left:-9999px;}
+		100% {left:0;}
+	}
+	@-webkit-keyframes moving-images { 
+		0%   {left:0;}
+		50%  {left:-9999px;}
+		100% {left:0;}
+	}
+	@-o-keyframes moving-images { 
+		0%   {left:0;}
+		50%  {left:-9999px;}
+		100% {left:0;}
+	}
 
-.background {
-  border-radius: 50px;
-  border: none;
-  background-color: rgba(0, 0, 0, .6);
-  margin-top: 1%;
-}
-
-.description {
-  border-radius: 50px;
-  border: none;
-  background-color: rgba(0, 0, 0, .6);
-  padding: 7px;
-  margin-top: 3%;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: normal;
-  color: gray;
-  text-shadow: 3px 3px 3px black;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: gray;
-}
 </style>
