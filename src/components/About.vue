@@ -1,21 +1,13 @@
 <template>
   <div class="about">
-      <div class="content-block">
-          <div class="bg" id="bg-keyframes"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <button id="viewabout" type="button" class="btn btn-outline-info">About</button>
-              </div>
-            </div>
-            <div class="row full align-items-center">
-              <div class="col font">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolor ut voluptates dignissimos! Explicabo incidunt
-                  nihil modi culpa? Non laudantium eaque repellat dolorem cupiditate quis quam fugiat enim suscipit accusamus.</p>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row full align-items-center">
+        <div class="col font">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolor ut voluptates dignissimos! Explicabo incidunt
+            nihil modi culpa? Non laudantium eaque repellat dolorem cupiditate quis quam fugiat enim suscipit accusamus.</p>
         </div>
+      </div>
+    </div>
     <!-- <div class="row">
       <div class="col-xs-8 col-xs-offset-2 background">
         <h3>I am a 31 year old technology enthusiast who pursues a passion in development for the web, various game platforms, software, and hardware. Along the way I have aqcuired varying skillsets with knowledge I've used in game development, server management, source control, and various hardware and software based hobby projects. This has fostered an analytical thinking style, and problem solving foundation on which I make continuous expansions upon.</h3>
@@ -31,23 +23,22 @@
 </template>
 
 <script>
-import Navbar from './Navbar'
-export default {
-  name: 'about',
-  data() {
-    return {
+  import Navbar from './Navbar'
+  export default {
+    name: 'about',
+    data() {
+      return {
 
+      }
+    },
+    computed: {},
+    methods: {},
+    components: {
+      Navbar
     }
-  },
-  computed: {},
-  methods: {},
-  components: {
-    Navbar
   }
-}
 </script>
 
 
 <style scoped>
-
 </style>
